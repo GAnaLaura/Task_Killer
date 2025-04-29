@@ -28,7 +28,7 @@ class RegisterFragment: Fragment() {
 
     private fun setupView() {
         binding.imageView.setOnClickListener {
-            findNavController().navigate(R.id.action_LoginFragment_to_RegisterFragment)
+            findNavController().navigate(R.id.action_RegisterFragment_to_LoginFragment)
         }
     }
 
