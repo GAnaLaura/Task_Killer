@@ -1,4 +1,4 @@
-package com.example.taskkiller
+package com.example.taskkiller.view.onboarding
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,9 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.taskkiller.databinding.FragmentLoginBinding
-class LogInFragment: Fragment() {
-    private var _binding: FragmentLoginBinding? = null
+import com.example.taskkiller.R
+import com.example.taskkiller.databinding.FragmentRegisterBinding
+
+class RegisterFragment: Fragment() {
+    private var _binding: FragmentRegisterBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -19,15 +21,15 @@ class LogInFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        _binding = FragmentRegisterBinding.inflate(inflater, container, false)
         setupView()
         return binding.root
 
     }
 
     private fun setupView() {
-        binding.registerText.setOnClickListener {
-            findNavController().navigate(R.id.action_LoginFragment_to_RegisterFragment)
+        binding.imageView.setOnClickListener {
+            findNavController().navigate(R.id.action_RegisterFragment_to_LoginFragment)
         }
     }
 

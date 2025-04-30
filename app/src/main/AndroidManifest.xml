@@ -13,7 +13,7 @@
         android:theme="@style/Theme.TaskKiller"
         tools:targetApi="31">
         <activity
-            android:name=".OnboardingActivity"
+            android:name=".view.onboarding.OnboardingActivity"
             android:exported="true"
             android:theme="@style/Theme.TaskKiller">
             <intent-filter>
@@ -24,7 +24,7 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".view.home.MainActivity"
             android:exported="false" >
         </activity>
     </application>

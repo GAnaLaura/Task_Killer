@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/RegisterFragment"
-        android:name="com.example.taskkiller.RegisterFragment"
+        android:name="com.example.taskkiller.view.onboarding.RegisterFragment"
         android:label="RegisterLabel"
         tools:layout="@layout/fragment_register">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/LoginFragment"
-        android:name="com.example.taskkiller.LogInFragment"
+        android:name="com.example.taskkiller.view.onboarding.LogInFragment"
         android:label="SignInFragment"
         tools:layout="@layout/fragment_login">
 
